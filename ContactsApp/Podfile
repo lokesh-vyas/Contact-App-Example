@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'ContactsApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  # ignore all warnings from all pods
+  inhibit_all_warnings!
+  
+  # Pods for ContactsApp
+  pod 'MBProgressHUD', '~> 1.2.0'
+  pod 'Kingfisher', '~> 6.3.1'
+  target 'ContactsAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ContactsAppUITests' do
+    # Pods for testing
+  end
+
+end
